@@ -4,64 +4,66 @@ body {
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
-    font-family: 'Roboto';
-    font-weight: 300;
-    font-size: 60px;
-    padding-top: 40vh;
-    height: 100vh;
+}
+
+.text-body {
+    margin-top: 60px;
     overflow: hidden;
+    backface-visibility: hidden;
+    perspective: 1000;
+    transform: translate3d(0,0,0);
     -webkit-backface-visibility: hidden;
     -webkit-perspective: 1000;
     -webkit-transform: translate3d(0,0,0);
 }
 
+.container {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
 /* Text Animation Start */
     div {
-    display: inline-block;
     overflow: hidden;
     white-space: nowrap;
     }
 
     .intro { 
-    animation: showup 7s infinite;
+    animation: showup 7s;
     color: whitesmoke;
     }
 
     .name {
-        animation: reveal 7s infinite;
-        color: whitesmoke;
+    animation: reveal 7s;
+    color: whitesmoke;
+    /* margin-bottom: -16px; */
     }
 
     .title {
-    width: 0px;
-    animation: reveal 7s infinite;
+    animation: slidein 7s;
     color: whitesmoke;
     }
 
-    .title span {
-    margin-left: -355px;
-    animation: slidein 7s infinite;
-    }
-
     @keyframes showup {
-        0% {opacity:0;}
-        20% {opacity:1;}
-        80% {opacity:1;}
-        100% {opacity:0;}
+        0% {opacity: 0;}
+        20% {opacity: 1;}
+        80% {opacity: 1;}
+        100% {opacity: 1;}
     }
 
     @keyframes slidein {
-        0% { margin-left:-800px; }
-        20% { margin-left:-800px; }
-        35% { margin-left:0px; }
-        100% { margin-left:0px; }
+        0% { margin-left: -1000px; }
+        20% { margin-left: -1000px; }
+        35% { margin-left: 0px; }
+        100% { margin-left: 0px;}
     }
 
     @keyframes reveal {
-        0% {opacity:0;width:0px;}
-        20% {opacity:1;width:0px;}
-        30% {width:355px;}
-        80% {opacity:1;}
-        100% {opacity:0;width:355px;}
+        0% {opacity: 0; width: 0px;}
+        20% {opacity: 1;width: 0px;}
+        30% {width: 100%;}
+        80% {opacity: 1;}
+        100% {opacity: 1; width: 100%;}
     }
 /* Text Animation End */
