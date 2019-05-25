@@ -32,31 +32,29 @@ body {
     }
 
     .intro { 
-    animation: showup 5s;
+    animation: showup 4s;
     color: whitesmoke;
     }
 
     .name {
-    animation: reveal 8s;
+    animation: reveal 7s;
     color: whitesmoke;
     /* margin-bottom: -16px; */
     }
 
     .title {
-    animation: slidein 15s;
+    animation: slidein 10s;
     color: whitesmoke;
     }
 
     @keyframes showup {
         0% {opacity: 0;}
-        20% {opacity: .5;}
-        80% {opacity: 1;}
         100% {opacity: 1;}
     }
 
     @keyframes slidein {
         0% { margin-left: -5000px; }
-        /* 20% { margin-left: -1000px; } */
+        20% { margin-left: -5000px; }
         35% { margin-left: 0px; }
         100% { margin-left: 0px;}
     }
@@ -73,8 +71,12 @@ body {
 
 
 /* Button animation Start */
+    #enter-link {
+        color: darkred;
+    }
+
     #site-button {
-        animation: button-reveal 15s forwards;  
+        animation: button-reveal 12s forwards;
     }
 
     @keyframes button-reveal {
@@ -88,13 +90,20 @@ body {
 
 
 /* --------  Navbar CSS -------- */
-.wrapper {
-    background-color: black;
-    opacity: .8;
+.header {
+    background-color: #6f6f6f;
+    opacity: .95;
+    padding: 5px 0px;
 }
 
-.h2 {
-    color: whitesmoke;
+.nav-link {
+    color: black;
+    font-weight: bolder;
+}
+
+.btn {
+    margin-top: 3px;
+    margin-left: 10px;
 }
 
 .fa-linkedin {
@@ -102,9 +111,9 @@ body {
     color: white;
   }
 
-/* .fa-github {
-    background: white;
-} */
+.fa-github {
+    background: black;
+}
 
 .card {
     width: 60%;
@@ -115,6 +124,8 @@ body {
 #image {
     opacity: 1;
 }
+
+
 
 /* #footer {
     align-content: center;
