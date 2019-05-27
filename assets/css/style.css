@@ -166,6 +166,7 @@ html {
     width: 250px;
     height: 375px;
     margin-right: 10px;
+    float: left;
 }
 
 /* --------- Gallery Page --------- */
@@ -216,8 +217,20 @@ html {
         max-height: 200px;
         max-width: 100%;
         margin: auto;
-    } 
+    }
+    
+    #about-me-image {
+        display: block;
+        margin: auto;
+        float: none;
+        margin-bottom: 5px;
+    }
 
+    .name-heading {
+        text-align: center;
+        margin-top: 2px;
+    }
+    
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
@@ -245,7 +258,7 @@ html {
         max-height: 400px;
         max-width: 100%;
         margin: auto;
-    }    
+    }
     
 } 
 
