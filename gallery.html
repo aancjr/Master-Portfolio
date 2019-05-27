@@ -37,67 +37,76 @@
     <section class="header">
         <div class="wrapper">
             <div class="row">
-                <div class="col-md-7 d-flex justify-content-center">
-                    <ul class="nav nav-pills">
-                        <li class="nav-item">
-                            <a class="nav-link" href="./index.html">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="./aboutme.html">About</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="./portfolio.html">Portfolio</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="./gallery.html">Gallery</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="">Blog</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="">Resume</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="./contact-form.html" target="_blank">Contact</a>
-                            <!-- <a class="nav-link modal-link" href="#theModal" data-remote="/contact-form.html" data-toggle="modal" data-target="#theModal">Contact</a> -->
-                        </li>
+                <div class="col-md-12 d-flex">
+                    <ul class="nav navbar-header navbar-expand-md">
+                        <button class="navbar-toggler" type="button" data-toggle="collapse"
+                            data-target="#collapsibleNavbar">
+                            <span class="navbar-toggler-icon">
+                                <i class="fa fa-navicon"></i>
+                            </span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                            <li class="nav-item">
+                                <a class="nav-link" href="./index.html">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="./aboutme.html">About</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="./portfolio.html">Portfolio</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="./gallery.html">Gallery</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="">Blog</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="">Resume</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="./contact-form.html" target="_blank">Contact</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="btn btn-social-icon btn-linkedin"
+                                    href="https://www.linkedin.com/in/andrew-anc-0911721a">
+                                    <span class="fa fa-linkedin"></span>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="btn btn-social-icon btn-github" href="https://github.com/aancjr">
+                                    <span class="fa fa-github"></span>
+                                </a>
+                            </li>
+                        </div>
                     </ul>
-                </div>
-                <div class="col-md-4 d-flex justify-content-end">
-                    <a class="btn btn-social-icon btn-linkedin" href="www.linkedin.com/in/andrew-anc-0911721a">
-                        <span class="fa fa-linkedin"></span>
-
-                        <a class="btn btn-social-icon btn-github" href="https://github.com/aancjr">
-                            <span class="fa fa-github"></span>
-                        </a>
                 </div>
             </div>
         </div>
     </section>
 
     <div class="modal fade" id="theModal" tabindex="-1" role="dialog">
-            <div class="modal-dialog" role="document">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <h5 class="modal-title" id="exampleModalLabel">Get in touch!</h5>
-                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                            <span aria-hidden="true">×</span>
-                        </button>
-                    </div>
-                    <div class="modal-body">
-                            ... remote content from "data-remote" loads here ...
-                    </div>
-                    <div class="modal-footer">
-                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                        <button type="button" class="btn btn-primary">Send message</button>
-                    </div>
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Get in touch!</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">×</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    ... remote content from "data-remote" loads here ...
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Send message</button>
                 </div>
             </div>
         </div>
+    </div>
 
     <div class="container">
         <div class="row">
-            <!-- <div class="jumbotron jumbotron-fluid"> -->
             <div id="my-carousel" class="carousel slide carousel-fade" data-ride="carousel">
                 <ol class="carousel-indicators">
                     <li data-target="#my-carousel" data-slide-to="0" class="active"></li>
@@ -109,22 +118,27 @@
                 </ol>
                 <div class="carousel-inner">
                     <div class="carousel-item active">
-                        <img class="d-block rounded" src="./assets/images/Gallery/dwarf-tree-christmas.JPG" alt="Dwarf Evergreen with christmas lights">
+                        <img class="d-block rounded" src="./assets/images/Gallery/dwarf-tree-christmas.JPG"
+                            alt="Dwarf Evergreen with christmas lights">
                     </div>
                     <div class="carousel-item">
-                        <img class="d-block rounded" src="./assets/images/Gallery/Lucy-winter.jpg" alt="Lucy in the snow">
+                        <img class="d-block rounded" src="./assets/images/Gallery/Lucy-winter.jpg"
+                            alt="Lucy in the snow">
                     </div>
                     <div class="carousel-item">
-                        <img class="d-block rounded" src="./assets/images/Gallery/Lucy-and-Etta.JPG" alt="Lucy and Etta together">
+                        <img class="d-block rounded" src="./assets/images/Gallery/Lucy-and-Etta.JPG"
+                            alt="Lucy and Etta together">
                     </div>
                     <div class="carousel-item">
                         <img class="d-block rounded" src="./assets/images/Gallery/Etta-closeup.JPG" alt="Etta's muzzle">
                     </div>
                     <div class="carousel-item">
-                        <img class="d-block rounded" src="./assets/images/Gallery/etta-under-dwarf-tree.JPG" alt="Etta under dwarf tree">
+                        <img class="d-block rounded" src="./assets/images/Gallery/etta-under-dwarf-tree.JPG"
+                            alt="Etta under dwarf tree">
                     </div>
                     <div class="carousel-item">
-                        <img class="d-block rounded" src="./assets/images/Gallery/andrew-christmas-lights.JPG" alt="Andrew putting up christmas lights">
+                        <img class="d-block rounded" src="./assets/images/Gallery/andrew-christmas-lights.JPG"
+                            alt="Andrew putting up christmas lights">
                     </div>
                 </div>
                 <a class="carousel-control-prev" href="#my-carousel" role="button" data-slide="prev">
@@ -137,7 +151,6 @@
                 </a>
             </div>
         </div>
-        <!-- </div> -->
     </div>
 
 </body>

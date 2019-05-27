@@ -97,6 +97,10 @@ html {
     padding: 5px 0px;
 }
 
+.nav {
+    margin-left: 120px;
+}
+
 .nav-link {
     color: black;
     font-weight: bolder;
@@ -105,6 +109,11 @@ html {
 .btn {
     margin-top: 3px;
     margin-left: 10px;
+    float: right;
+}
+
+.btn-linkedin {
+    margin-left: 320px;
 }
 
 .fa-linkedin {
@@ -116,14 +125,18 @@ html {
     background: black;
 }
 
+/* --------- Portfolio --------- */
+
 .card {
-    width: 60%;
+    width: 80%;
     opacity: .8;
     margin-top: 15px;
 }
 
 #image {
     opacity: 1;
+    max-width: 100%;
+    height: auto;
 }
 
 /* -------- Contact Page --------- */
@@ -147,11 +160,6 @@ html {
 
 .name-heading {
     margin-top: 25px;
-}
-
-.text-wrap {
-    margin-left: 25px;
-    margin-right: 15px;
 }
 
 #about-me-image {
@@ -186,13 +194,76 @@ html {
     margin-bottom: 50px;
 }
 
-/* .jumbotron {
-    margin-top: 20px;
-    height: 600px;
-} */
+/* --------- Media Queries ---------÷ */
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    .navbar-toggler {
+        float: left;
+        margin-left: -120px;
+        margin-top: 5px;
+    }
+
+    .btn {
+        float: left;
+    }
+
+    .btn-linkedin {
+        margin-left: 15px;
+    }
+
+    .carousel-item img {
+        max-height: 200px;
+        max-width: 100%;
+        margin: auto;
+    } 
+
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) and (max-width: 992px) {
+   
+    .navbar-toggler {
+        float: left;
+        margin-left: -120px;
+        margin-top: 5px;
+    }
+
+    .btn {
+        float: left;
+    }
+
+    .btn-linkedin {
+        margin-left: 15px;
+    }
+
+    .card {
+        width: 100%;
+    }
+
+    .carousel-item img {
+        max-height: 400px;
+        max-width: 100%;
+        margin: auto;
+    }    
+    
+} 
+
+@media only screen and (min-width: 993px) and (max-width: 1024px) {
+   
+    .nav {
+        margin-left: 50px;
+    }
+
+    .btn-linkedin {
+        margin-left: 220px;
+    }
+}
+
 
 /* #footer {
     align-content: center;
     justify-content: center;
     color: whitesmoke;
 } */
+
