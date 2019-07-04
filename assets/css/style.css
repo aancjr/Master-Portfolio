@@ -87,25 +87,11 @@ html {
 
 
 /* --------  Navbar CSS -------- */
-.header {
-    background-color: #ededed;
-    opacity: .95;
-    padding: 5px 0px;
-}
 
-.nav {
-    margin-left: 120px;
-}
-
-.nav-link {
+.nav-link, .navbar-brand {
     color: black;
     font-weight: bolder;
 }
-
-#social {
-    margin: 0px 15px;
-}
-
 
 .fa-linkedin {
     background: #007bb5;
@@ -191,11 +177,6 @@ html {
 
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
-    .navbar-toggler {
-        float: left;
-        margin-left: -120px;
-        margin-top: 5px;
-    }
 
     .carousel-item img {
         max-height: 200px;
@@ -215,17 +196,19 @@ html {
         margin-top: 2px;
     }
     
+    #linkedIn {
+        margin-top: .5rem;
+        margin-bottom: .5rem;
+    }
+
+    #github {
+        margin-bottom: .5rem;
+    }
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
-@media only screen and (min-width: 600px) and (max-width: 992px) {
+@media only screen and (min-width: 601px) and (max-width: 992px) {
    
-    .navbar-toggler {
-        float: left;
-        margin-left: -120px;
-        margin-top: 5px;
-    }
-
     .card {
         width: 100%;
     }
@@ -235,16 +218,17 @@ html {
         max-width: 100%;
         margin: auto;
     }
-    
-} 
 
-@media only screen and (min-width: 993px) and (max-width: 1024px) {
-   
-    .nav {
-        margin-left: 50px;
+    #linkedIn {
+        margin-top: .5rem;
+        margin-bottom: .5rem;
     }
 
-}
+    #github {
+        margin-bottom: .5rem;
+    }
+
+} 
 
 /* --------- Footer --------- */
 
