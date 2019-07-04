@@ -135,13 +135,23 @@ html {
 }
 
 .name-heading {
-    margin-top: 25px;
+    margin-top: 20px;
+}
+
+.greeting {
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+
+.text-wrap {
+    margin-bottom: 5px;
 }
 
 #about-me-image {
-    width: 250px;
-    height: 375px;
+    max-width: 40%;
+    height: auto;
     margin-right: 10px;
+    margin-top: 12px;
     float: left;
 }
 
@@ -188,12 +198,10 @@ html {
         display: block;
         margin: auto;
         float: none;
-        margin-bottom: 5px;
     }
 
-    .name-heading {
+    .greeting {
         text-align: center;
-        margin-top: 2px;
     }
     
     #linkedIn {
@@ -236,7 +244,7 @@ html {
     border-color: lightslategrey;
     border-top-style: solid;
     border-width: 1px;
-    margin-top: 25px;
+    margin-top: 15px;
 }
 
 .footer-text {
