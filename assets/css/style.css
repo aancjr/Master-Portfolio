@@ -26,10 +26,6 @@ html {
 }
 
 /* Name/Intro/Title Animation Start */
-    div {
-    overflow: hidden;
-    white-space: nowrap;
-    }
 
     .intro { 
     animation: showup 4s;
@@ -106,15 +102,10 @@ html {
     font-weight: bolder;
 }
 
-.btn {
-    margin-top: 3px;
-    margin-left: 10px;
-    float: right;
+#social {
+    margin: 0px 15px;
 }
 
-.btn-linkedin {
-    margin-left: 320px;
-}
 
 .fa-linkedin {
     background: #007bb5;
@@ -126,6 +117,11 @@ html {
 }
 
 /* --------- Portfolio --------- */
+
+.body-portfolio {
+    width: 100%;
+    margin: auto;
+}
 
 .card {
     width: 100%;
@@ -201,14 +197,6 @@ html {
         margin-top: 5px;
     }
 
-    .btn {
-        float: left;
-    }
-
-    .btn-linkedin {
-        margin-left: 15px;
-    }
-
     .carousel-item img {
         max-height: 200px;
         max-width: 100%;
@@ -238,14 +226,6 @@ html {
         margin-top: 5px;
     }
 
-    .btn {
-        float: left;
-    }
-
-    .btn-linkedin {
-        margin-left: 15px;
-    }
-
     .card {
         width: 100%;
     }
@@ -264,21 +244,14 @@ html {
         margin-left: 50px;
     }
 
-    .btn-linkedin {
-        margin-left: 220px;
-    }
 }
 
 /* --------- Footer --------- */
-#social {
-    float: none;
-    margin: 0;
-}
 
 .page-footer {
+    border-color: lightslategrey;
     border-top-style: solid;
-    border-width: 2px;
+    border-width: 1px;
     margin-top: 25px;
 }
-
 
