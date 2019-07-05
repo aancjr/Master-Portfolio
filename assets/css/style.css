@@ -117,16 +117,13 @@ html {
     margin-top: 15px;
 }
 
-/* One Page Scrol Portfolio */
+
+/* One Page Scroll Portfolio */
 
 .projects-section-top {
-    padding: 7.5rem 0rem 4rem 0rem;
+    padding: 6rem 0rem 2rem 0rem;
   }
-  
-  /* .projects-section-top .featured-text {
-    padding: 2rem 0rem 0rem 2rem;
-  } */
-  
+    
   @media (min-width: 992px) {
     .featured-text {
       padding: 0 0 0 2rem;
