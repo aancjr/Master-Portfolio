@@ -34,9 +34,9 @@
     <title>Portfolio | Andrew Anc Jr.</title>
 </head>
 
-<body class="body-portfolio">
+<body class="body-portfolio-scroll">
     <section class="header">
-        <nav class="navbar navbar-light navbar-expand-lg bg-light">
+        <nav class="navbar fixed-top navbar-light navbar-expand-lg">
             <div class="container-fluid">
                 <a href="./index.html" class="navbar-brand mx-md-2">Andrew Anc Jr.</a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".dual-nav">
@@ -84,8 +84,59 @@
         </nav>
     </section>
 
-    <section class="content">
+    <section id="projects" class="projects-section bg-light">
         <div class="container">
+            <div class="row align-items-center no-gutters mb-2 mb-lg-2">
+                <div class="col-xl-8 col-lg-7">
+                    <a href="https://aancjr.github.io/Master-Portfolio/" target="_blank"><img id="masterPortfolio"
+                            class="img-fluid mb-3 mb-lg-0" src="./assets/images/Portfolio/master-portfolio.png"
+                            alt="master-portfolio">
+                    </a>
+                </div>
+                <div class="col-xl-4 col-lg-5">
+                    <div class="featured-text text-center text-lg-left ml-3">
+                        <h4>Master Portfolio</h4>
+                        <p class="text-black-50 mb-0">You are currently viewing my Master Portfolio. This is a
+                            working site and its style and content will be updated on a regular basis.
+                        </p>
+
+                        <p class="text-black-50 mb-0">Currently, this site is utilizing HTML, CSS, Bootstrap and
+                            Javascript.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="projects" class="bg-light">
+        <div class="container">
+            <div class="row align-items-center no-gutters mb-4 mb-lg-5">
+                <div class="col-xl-8 col-lg-7">
+                    <a href="https://aancjr.github.io/unit-4-game/" target="_blank"><img id="crystalCollector"
+                            class="img-fluid mb-3 mb-lg-0" src="./assets/images/Portfolio/crystal-collector.png"
+                            alt="crystal-collector-game">
+                    </a>
+                </div>
+                <div class="col-xl-4 col-lg-5">
+                    <div class="featured-text text-center text-lg-left ml-3">
+                        <h4>Crystal Collector</h4>
+                        <p class="text-black-50 mb-0">Crystal Collector is a web-based game where the user has to guess
+                            the number the computer has randomly selected by clicking the correct gem's to add up to the
+                            total number. Each new game loads a new random computer guess (19-120) and each gem has a
+                            randomly selected value (1-12). If you add up the gem's to reach the computer's guess, you
+                            win! If you go over, you lose!
+                        </p>
+
+                        <p class="text-black-50 mb-0">This game was created using HTML, CSS, Bootstrap, Javascript and
+                            jQuery.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- <div class="container">
             <div class="row">
                 <div class="col-md-6 d-flex justify-content-center">
                     <div class="card">
@@ -184,7 +235,7 @@
                         </div>
                     </div>
                 </div>
-            </div>
+            </div> -->
     </section>
 
     <footer class="page-footer small">
