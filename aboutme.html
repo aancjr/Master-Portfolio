@@ -19,9 +19,7 @@
     <link rel="stylesheet" href="../../Tools/bootstrap-social-gh-pages/assets/css/font-awesome.css">
 
     <!-- JavaScript -->
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
-        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
-        crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
         integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
         crossorigin="anonymous"></script>
@@ -60,7 +58,9 @@
                             <a class="nav-link" href="#">Resume</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="./contact-form.html">Contact</a>
+                            <a class="nav-link" href="/contact-form.html" href="#theModal" class="nav-link"
+                                data-remote=".contact-form.html" data-toggle="modal" data-target="#theModal"
+                                class="contactModal">Contact</a>
                         </li>
                     </ul>
                 </div>
@@ -85,6 +85,28 @@
     </section>
 
     <section class="aboutme">
+        <div class="container">
+            <div class="row">
+                <div id="theModal" class="modal fade text-center">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="exampleModalLabel">Get in touch!</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">×</span>
+                                </button>
+                            </div>
+                            <div class="modal-body">
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                <button type="button" class="btn btn-primary">Send message</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
         <div class="name-heading">
             <div class="container">
                 <!-- <h2 class="greeting">Hello! I'm Andrew!</h2> -->
@@ -92,26 +114,32 @@
                     <div class="col-md-12">
                         <img src="./assets/images/Gallery/andrew-christmas-lights.JPG" class="img-fluid rounded"
                             id="about-me-image" alt="About Me Pic">
-                            <h5 class="greeting">About Me</h5>
-                        <p class="text-wrap">I'm a Merrimac, MA based full-stack developer educated at the University of
+                        <h5 class="greeting">About Me</h5>
+                        <p class="text-wrap">I'm a Merrimac, MA based full-stack developer educated at the
+                            University of
                             New Hampshire Coding Bootcamp program with experience in frontend and backend software
-                            languages. I also have a Bachelors in Business and Entrepreneurship and have been successful
+                            languages. I also have a Bachelors in Business and Entrepreneurship and have been
+                            successful
                             in
                             the last 5 years of my sales career and have even exceeded my quota by 300%.</p>
                         <p class="text-wrap">My sales career has taught me a lot about goals, deadlines and pushing
                             yourself out of your comfort zone. These are all qualities I have learned to carry in my
                             everyday life
-                            that have allowed me to continue to grow. I’m organized, curious, focused and find the most
+                            that have allowed me to continue to grow. I’m organized, curious, focused and find the
+                            most
                             enjoyment
-                            when I'm hands on. I'm excited to use my aptitude for technology and problem solving skills
+                            when I'm hands on. I'm excited to use my aptitude for technology and problem solving
+                            skills
                             while
                             contributing to a great team.</p>
                         <p class="text-wrap">When I'm not programming, you can find me spending time with my wife
                             Jocelyn,
-                            our daughter Mia and our two Boxers, Lucy and Etta. Aside from this, I enjoy photography,
+                            our daughter Mia and our two Boxers, Lucy and Etta. Aside from this, I enjoy
+                            photography,
                             cars and music.
                         </p>
-                        <p class="text-wrap">Please feel free to cruise around the site and leave me note! If you'd like
+                        <p class="text-wrap">Please feel free to cruise around the site and leave me note! If you'd
+                            like
                             to get in touch
                             with me, feel free to use any of the social media avenues or by contact form.
                         </p>
