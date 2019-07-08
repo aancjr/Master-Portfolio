@@ -105,6 +105,10 @@ html {
     background: black;
 }
 
+.fa-envelope {
+    color: white;
+}
+
 /* --------- Portfolio --------- */
 
 .body-portfolio {
@@ -159,28 +163,33 @@ html {
   }
 
 
-
-
-/* -------- Contact Page --------- */
-
-.body-contact {
-    background: #bdc3c7;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to bottom, #2c3e50, #bdc3c7);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to bottom, #2c3e50, #bdc3c7); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-    color: whitesmoke;
-}
-
-.main-content {
-    margin-top: 15px;
-}
-
 /* --------- About Me --------- */
 
-.aboutme {
+/* .aboutme {
     margin: auto;
+} */
+
+#aboutMeNavBar {
+    background-color: transparent;
 }
 
-.name-heading {
+.bodyAboutMe {
+    background: url('../images/Gallery/andrew-christmas-lights.JPG') no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+  }
+  
+  .about, .text-wrap {
+    color: whitesmoke;
+  }
+
+  #emailbtn {
+      margin: -5px; 
+  }
+
+/* .name-heading {
     margin-top: 20px;
 }
 
@@ -199,11 +208,11 @@ html {
     margin-right: 10px;
     margin-top: 12px;
     float: left;
-}
+} */
 
 /* --------- Background Gradient --------- */
 
-.body-gallery, .body-portfolio, .body-aboutme {
+.body-gallery, .body-portfolio {
     background: #ECE9E6;  /* fallback for old browsers */
     background: -webkit-linear-gradient(to top, #FFFFFF, #E2E3D9);  /* Chrome 10-25, Safari 5.1-6 */
     background: linear-gradient(to top, #FFFFFF, #E2E3D9); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
@@ -240,7 +249,7 @@ html {
         margin: auto;
     }
     
-    #about-me-image {
+    /* #about-me-image {
         display: block;
         margin: auto;
         float: none;
@@ -248,7 +257,7 @@ html {
 
     .greeting {
         text-align: center;
-    }
+    } */
     
     #linkedIn {
         margin-top: .5rem;
