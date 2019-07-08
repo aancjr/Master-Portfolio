@@ -87,22 +87,13 @@ html {
 
 
 /* --------  Navbar CSS -------- */
-.navbar {
-    background-color: rgb(202, 202, 202)
-}
-
-.nav-link, .navbar-brand {
-    color: black;
-    font-weight: bolder;
-}
 
 .fa-linkedin {
-    background: #007bb5;
     color: white;
   }
 
 .fa-github {
-    background: black;
+    color: white;
 }
 
 .fa-envelope {
@@ -165,15 +156,12 @@ html {
 
 /* --------- About Me --------- */
 
-/* .aboutme {
-    margin: auto;
-} */
-
 #aboutMeNavBar {
     background-color: transparent;
 }
 
 .bodyAboutMe {
+    font-family: 'Montserrat', sans-serif;
     background: url('../images/Gallery/andrew-christmas-lights.JPG') no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -181,17 +169,9 @@ html {
     -o-background-size: cover;
   }
   
-  .about, .text-wrap {
+.about, .text-wrap {
     color: whitesmoke;
   }
-
-  #emailbtn {
-      margin: -5px; 
-  }
-
-/* .name-heading {
-    margin-top: 20px;
-}
 
 .greeting {
     margin-top: 10px;
@@ -201,14 +181,6 @@ html {
 .text-wrap {
     margin-bottom: 5px;
 }
-
-#about-me-image {
-    max-width: 40%;
-    height: auto;
-    margin-right: 10px;
-    margin-top: 12px;
-    float: left;
-} */
 
 /* --------- Background Gradient --------- */
 
@@ -248,25 +220,11 @@ html {
         max-width: 100%;
         margin: auto;
     }
-    
-    /* #about-me-image {
-        display: block;
-        margin: auto;
-        float: none;
+
+    #aboutMeNavBar {
+        background: rgba(10, 27, 49, 0.973)
     }
 
-    .greeting {
-        text-align: center;
-    } */
-    
-    #linkedIn {
-        margin-top: .5rem;
-        margin-bottom: .5rem;
-    }
-
-    #github {
-        margin-bottom: .5rem;
-    }
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
@@ -282,13 +240,8 @@ html {
         margin: auto;
     }
 
-    #linkedIn {
-        margin-top: .5rem;
-        margin-bottom: .5rem;
-    }
-
-    #github {
-        margin-bottom: .5rem;
+    #aboutMeNavBar {
+        background: rgba(10, 27, 49, 0.973)
     }
 
 } 
