@@ -1,6 +1,9 @@
 /* ---------------------
    Main 
 --------------------- */
+body {
+  position: relative;
+}
 
 * {
   font-family: 'Montserrat', sans-serif;
@@ -135,13 +138,14 @@ header.in-view {
 }
 
 .portfolioHeading {
-  margin-top: -50px;
+  /* margin-top: -50px; */
   margin-bottom: 30px;
 }
 
 /* ---------------------
    Resume
 --------------------- */
+
 .resumeHeading {
   margin-top: -50px;
 }
@@ -153,6 +157,7 @@ header.in-view {
 /* ---------------------
    Badges
 --------------------- */
+
 .badges {
   margin-bottom: -100px;
   max-width: 3rem;
@@ -179,9 +184,17 @@ header.in-view {
    Media Queries
 --------------------- */
 
-@media only screen and (max-width: 600px) {
+@media only screen and (min-width: 300px) and (max-width: 600px) {
   #aboutMeNavBar {
-    background: rgba(10, 27, 49, 0.973)
+    background: rgba(10, 27, 49, 0.973);
+  }
+
+  p {
+    font-size: .6rem;
+  }
+
+  .portfolioHeading {
+    font-size: 1.5rem;
   }
 }
 
