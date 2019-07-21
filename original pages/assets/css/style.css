@@ -15,10 +15,10 @@ body, html {
     overflow: hidden;
     backface-visibility: hidden;
     perspective: 1000;
-    transform: translate3d(0,0,0);
+    transform: translate3d(0, 0, 0);
     -webkit-backface-visibility: hidden;
     -webkit-perspective: 1000;
-    -webkit-transform: translate3d(0,0,0);
+    -webkit-transform: translate3d(0, 0, 0);
     text-align: center;
     justify-content: center;
     align-content: center;
@@ -26,70 +26,105 @@ body, html {
 
 /* Name/Intro/Title Animation Start */
 
-    .intro { 
+.intro {
     animation: showup 4s;
     color: whitesmoke;
-    }
+}
 
-    .name {
+.name {
     animation: reveal 7s;
     color: whitesmoke;
     /* margin-bottom: -16px; */
-    }
+}
 
-    .title {
+.title {
     animation: slidein 10s;
     color: whitesmoke;
-    }
+}
 
-    @keyframes showup {
-        0% {opacity: 0;}
-        100% {opacity: 1;}
+@keyframes showup {
+    0% {
+        opacity: 0;
     }
+    100% {
+        opacity: 1;
+    }
+}
 
-    @keyframes slidein {
-        0% { margin-left: -5000px; }
-        20% { margin-left: -5000px; }
-        35% { margin-left: 0px; }
-        100% { margin-left: 0px;}
+@keyframes slidein {
+    0% {
+        margin-left: -5000px;
     }
+    20% {
+        margin-left: -5000px;
+    }
+    35% {
+        margin-left: 0px;
+    }
+    100% {
+        margin-left: 0px;
+    }
+}
 
-    @keyframes reveal {
-        0% {opacity: 0; width: 0px;}
-        20% {opacity: 0;width: 0px;}
-        30% {width: 100%;}
-        80% {opacity: 1;}
-        100% {opacity: 1; width: 100%;}
+@keyframes reveal {
+    0% {
+        opacity: 0;
+        width: 0px;
     }
+    20% {
+        opacity: 0;
+        width: 0px;
+    }
+    30% {
+        width: 100%;
+    }
+    80% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 1;
+        width: 100%;
+    }
+}
+
 /* Text Animation End */
 
-
-
 /* Button animation Start */
-    #enter-link {
-        color: darkred;
-    }
 
-    #site-button {
-        animation: button-reveal 12s forwards;
-    }
+#enter-link {
+    color: darkred;
+}
 
-    @keyframes button-reveal {
-        0% {opacity: 0;}
-        20% {opacity: 0;}
-        30% {width: 100%}
-        80% {opacity: 1;}
-        100% {opacity: 1; width: 100%}
+#site-button {
+    animation: button-reveal 12s forwards;
+}
+
+@keyframes button-reveal {
+    0% {
+        opacity: 0;
     }
+    20% {
+        opacity: 0;
+    }
+    30% {
+        width: 100%
+    }
+    80% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 1;
+        width: 100%
+    }
+}
+
 /* Button Animation End */
-
-
 
 /* --------  Navbar CSS -------- */
 
 .fa-linkedin {
     color: white;
-  }
+}
 
 .fa-github {
     color: white;
@@ -111,47 +146,45 @@ body, html {
     margin-top: 15px;
 }
 
-
 /* One Page Scroll Portfolio */
 
 .projects-section-top {
     padding: 6rem 0rem 2rem 0rem;
-  }
-    
-  @media (min-width: 992px) {
+}
+
+@media (min-width: 992px) {
     .featured-text {
-      padding: 0 0 0 2rem;
-      border-left: 0.5rem solid #0a0ca380;
+        padding: 0 0 0 2rem;
+        border-left: 0.5rem solid #0a0ca380;
     }
-  }
-  
-  .projects-section-top .project-text {
+}
+
+.projects-section-top .project-text {
     padding: 3rem;
     font-size: 90%;
-  }
-  
-  @media (min-width: 992px) {
+}
+
+@media (min-width: 992px) {
     .projects-section-top .project-text {
-      padding: 5rem;
+        padding: 5rem;
     }
     .projects-section-top .project-text hr {
-      border-color: #64a19d;
-      border-width: .25rem;
-      width: 30%;
+        border-color: #64a19d;
+        border-width: .25rem;
+        width: 30%;
     }
-  }
-  
-  #crystalCollector {
-      border-color: lightgrey;
-      border-style: solid;
-      border-width: 2px;
-  }
+}
 
-  #trainSchedule {
-      width: 75%;
-      height: auto;
-  }
+#crystalCollector {
+    border-color: lightgrey;
+    border-style: solid;
+    border-width: 2px;
+}
 
+#trainSchedule {
+    width: 75%;
+    height: auto;
+}
 
 /* --------- About Me --------- */
 
@@ -169,11 +202,11 @@ body, html {
     background-size: cover;
     -o-background-size: cover;
     height: 100%;
-  }
-  
+}
+
 .about, .text-wrap {
     color: whitesmoke;
-  }
+}
 
 .greeting {
     margin-top: 10px;
@@ -187,18 +220,20 @@ body, html {
 /* --------- Background Gradient --------- */
 
 .body-gallery, .body-portfolio {
-    background: #ECE9E6;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to top, #FFFFFF, #E2E3D9);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to top, #FFFFFF, #E2E3D9); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: #ECE9E6;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to top, #FFFFFF, #E2E3D9);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to top, #FFFFFF, #E2E3D9);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     background-repeat: no-repeat;
     height: 100%;
-
 }
 
 /* --------- Carousel --------- */
 
 .carousel-inner {
-    height: 500px; 
+    height: 500px;
 }
 
 .carousel-item img {
@@ -215,38 +250,33 @@ body, html {
 /* --------- Media Queries ---------÷ */
 
 /* Extra small devices (phones, 600px and down) */
-@media only screen and (max-width: 600px) {
 
+@media only screen and (max-width: 600px) {
     .carousel-item img {
         max-height: 200px;
         max-width: 100%;
         margin: auto;
     }
-
     #aboutMeNavBar {
         background: rgba(10, 27, 49, 0.973)
     }
-
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
+
 @media only screen and (min-width: 601px) and (max-width: 992px) {
-   
     .card {
         width: 100%;
     }
-
     .carousel-item img {
         max-height: 400px;
         max-width: 100%;
         margin: auto;
     }
-
     #aboutMeNavBar {
         background: rgba(10, 27, 49, 0.973)
     }
-
-} 
+}
 
 /* --------- Footer --------- */
 
@@ -260,5 +290,3 @@ body, html {
 .footer-text {
     margin-bottom: 4px;
 }
-
-

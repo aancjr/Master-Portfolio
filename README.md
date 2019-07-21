@@ -11,10 +11,6 @@ https://aancjr.github.io/Master-Portfolio/
 
     This portfolio isn't complete yet. Here's what I'll be updating/creating in the future:
         - Page transitions to create a greater user experience.
-        - I'd like the "Enter Vehicle" link to bring the user to a shifter style menu before entering the content of the site.
-            - Also make animation so a "shifter" moves to the selected menu.
-        - Portfolio Page: update it so that it's no longer a card style portfolio page. I'd like to utilize each "window" as a portfolio example with description of each project and a larger screenshot. Then a link to the git and project.
-        - About Me: I'd like to list my skills/interests/languages below my paragraph. I'd stick with the overall theme of my page (automotive).
         - Blog: this will be something i will be incorporating in the future. For now, I'll put a screenshot/coming soon image/logo. 
-        - I haven't reformated/updated my resume, so i haven't included it. This is on my "fast-followers" list.
-        - Colors: I'd like to also update the background, header and footer colors. This will most likely happen as i go and add different elements. 
+        - Resume
+        - Update gallery page for my photography.

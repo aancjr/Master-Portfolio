@@ -1,129 +1,194 @@
-*{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
-  }
-  img{
-    max-width:100%;
-  }
-  h2{
-    font-size: 2.5em;
-  }
-  /* .container{
-    width:90%;
-    margin:auto;
-  } */
-  header{
-    color: #fff;
-    position: absolute;
-    display: flex;
-    flex-flow: row wrap;
-    width: 100%;
-    top: 0;
-    padding: 0;
-    /* left:0; */
-    z-index:9;
-  }
-  header .container{
-    display: flex;
-    flex-flow: row wrap;
-    align-items: center;
-  }
-   
-nav {
-      justify-content: flex-end;
-      display: flex;
-      flex: 2 auto;
-  }
+/* ---------------------
+   Main 
+--------------------- */
 
-  .navbar {
-    padding: .35rem 1rem !important;
-  }
- 
-  nav ul{
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    display: flex;
-    flex-direction: row;
-  }
-  nav ul li a{
-    color: #fff;
-    text-decoration: none;
-    display: inline-block;
-  }
-  section{
-    padding: 150px 0;
-  }
-  .hero-banner{
-  background:url(../images/Gallery/andrew-christmas-lights.JPG) no-repeat center center;
-    background-size: cover;
-    height: 100vh;
-    display: flex;
-    align-items: center;
-    text-align: center;
-    position: relative;
-    z-index: 0;
-  }
-  .hero-banner:after{
-    content: "";
-    display: block;
-    background: rgba(0,0,0,0.5);
-    left: 0;
-    top: 0;
-    height: 100%;
-    width: 100%;
-    position: absolute;
-  }
-  .hero-banner h2{
-    color: #fff;
-    position: relative;
-    z-index: 1;
-  }
-  .about{
-    text-align: center;
-    line-height: 2;
-    color: white;
-  }
-  .portfolio{
-    text-align: center;
-    line-height: 2;
-    background: #f1f1f1;
-  }
-  header.fixed {
-    background: rgba(10, 27, 49, 0.973);
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    opacity: 0;
-    visibility: hidden;
-    box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.2);
-    transform: translate(0, -200px);
-    /* margin-bottom: 600px; */
-  }
-  header.fixed nav a, header.fixed a{
-    color: #333;
-  }
-  header.in-view{
-    opacity: 1;
-    visibility: visible;
-    transition: all 0.3s ease;
-    transform: translate(0, 0);
-  }
+* {
+  font-family: 'Montserrat', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
-  .fa-linkedin {
-    color: whitesmoke;
-  }
+section {
+  padding: 100px 0;
+}
+
+/* ---------------------
+   Social Icons
+--------------------- */
+
+.fa-linkedin {
+  color: whitesmoke;
+}
 
 .fa-github {
-    color: whitesmoke;
+  color: whitesmoke;
 }
 
 .fa-envelope {
-    color: whitesmoke;
+  color: whitesmoke;
 }
 
-.text-wrap {
+/* ---------------------
+   Header 
+--------------------- */
+
+header {
+  color: #fff;
+  position: absolute;
+  display: flex;
+  flex-flow: row wrap;
+  width: 100%;
+  top: 0;
+  padding: 0;
+  z-index: 9;
+}
+
+header .container {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+}
+
+nav {
+  justify-content: flex-end;
+  display: flex;
+  flex: 2 auto;
+}
+
+/* ---------------------
+   After scrolling 
+--------------------- */
+
+header.fixed {
+  background: rgba(10, 27, 49, 0.973);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  opacity: 0;
+  visibility: hidden;
+  box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.2);
+  transform: translate(0, -200px);
+}
+
+header.fixed nav a, header.fixed a {
+  color: #333;
+}
+
+header.in-view {
+  opacity: 1;
+  visibility: visible;
+  transition: all 0.3s ease;
+  transform: translate(0, 0);
+}
+
+/* ---------------------
+   About Me Page 
+--------------------- */
+
+.hero-banner {
+  background: url(../images/Gallery/andrew-christmas-lights.JPG) no-repeat center center;
+  background-size: cover;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  position: relative;
+  z-index: 0;
+}
+
+.hero-banner:after {
+  content: "";
+  display: block;
+  background: rgba(0, 0, 0, 0.397);
+  height: 100%;
+  width: 100%;
+  position: absolute;
+}
+
+.hero-banner .text-wrap, .about {
   color: white;
+  position: relative;
+  z-index: 1;
+}
+
+.about {
+  margin-bottom: 20px;
+}
+
+/* ---------------------
+   Portfolio
+--------------------- */
+
+.portfolio {
+  text-align: center;
+  line-height: 2;
+  background: #f1f1f1;
+}
+
+.card-text {
+  font-size: 12px;
+}
+
+.text-muted {
+  font-size: 10px;
+}
+
+.portfolioHeading {
+  margin-top: -50px;
+  margin-bottom: 30px;
+}
+
+/* ---------------------
+   Resume
+--------------------- */
+.resumeHeading {
+  margin-top: -50px;
+}
+
+.resumeLink {
+  margin-bottom: 5px;
+}
+
+/* ---------------------
+   Badges
+--------------------- */
+.badges {
+  margin-bottom: -100px;
+  max-width: 3rem;
+}
+
+/* ---------------------
+   Footer
+--------------------- */
+
+.page-footer {
+  border-color: rgb(134, 134, 134);
+  border-top-style: solid;
+  border-width: 3px;
+  margin-top: 15px;
+  background-color: rgba(10, 27, 49, 0.973);
+}
+
+.footer-text {
+  margin-bottom: 4px;
+  color: whitesmoke;
+}
+
+/* ---------------------
+   Media Queries
+--------------------- */
+
+@media only screen and (max-width: 600px) {
+  #aboutMeNavBar {
+    background: rgba(10, 27, 49, 0.973)
+  }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+
+@media only screen and (min-width: 601px) and (max-width: 992px) {
+  #aboutMeNavBar {
+    background: rgba(10, 27, 49, 0.973)
+  }
 }
