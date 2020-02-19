@@ -16,7 +16,7 @@ $(window).scroll(function () {
 
 $('body').scrollspy({ target: '#navbar-example' })
 
-var cards = $('.card');
+var cards = $('.item-size');
 var maxHeight = 0;
 
 for (var i = 0; i < cards.length; i++) {
