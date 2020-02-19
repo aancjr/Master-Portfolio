@@ -12,7 +12,7 @@
     <link rel="stylesheet" type="text/css" media="screen" href="assets/css/masterStyle.css" />
 
     <!-- Font -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css" />
+    <script src="https://kit.fontawesome.com/983f36912c.js" crossorigin="anonymous"></script>
     <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet" />
 
     <!-- Badges -->
@@ -29,20 +29,6 @@
       crossorigin="anonymous"
     />
     <link rel="stylesheet" href="./assets/css/bootstrap-social.css" />
-
-    <!-- JavaScript -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
-      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
-      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
-      crossorigin="anonymous"
-    ></script>
-    <script type="text/javascript" src="assets/javascript/logic.js"></script>
   </head>
 
   <body data-spy="scroll" data-target="#aboutMeNavBar">
@@ -82,12 +68,12 @@
                   href="https://www.linkedin.com/in/andrew-anc-0911721a"
                   target="_blank"
                 >
-                  <span class="fa fa-linkedin"></span>
+                  <span class="fab fa-linkedin"></span>
                 </a>
               </li>
               <li class="nav-item">
                 <a class="btn btn-social-icon mr-md-1" id="github" href="https://github.com/aancjr" target="_blank">
-                  <span class="fa fa-github"></span>
+                  <span class="fab fa-github"></span>
                 </a>
               </li>
               <li class="nav-item">
@@ -136,29 +122,29 @@
         </div>
       </div>
     </section>
-    <section class="portfolio" id="portfolioRef">
-      <div class="container">
-        <h1 class="portfolioHeading">P O R T F O L I O</h1>
-        <div class="card-deck">
-            
-          <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-            <ol class="carousel-indicators">
-              <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-              <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-              <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-              <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="sr-only">Previous</span>
-              </a>
-              <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="sr-only">Next</span>
-              </a>
-            </ol>
 
-            <div class="carousel-inner row">
-              <div class="col-4 active">
-                <div class="card bg-light">
+    <section class="portfolio" id="portfolioRef">
+      <h1 class="portfolioHeading">P O R T F O L I O</h1>
+      <div class="container">
+        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+          <ol class="carousel-indicators my-auto">
+            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+            <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+              <i class="fa fa-long-arrow-alt-left fa-2x"></i>
+              <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+              <i class="fa fa-long-arrow-alt-right fa-2x"></i>
+              <span class="sr-only">Next</span>
+            </a>
+          </ol>
+          
+          <div class="carousel-inner row mx-auto">
+            <div class="carousel-item active">
+              <div class="col-lg-8 mx-auto">
+                <div class="card bg-light p-0 m-1">
                   <h5 class="card-header">Crystal Collector</h5>
                   <a href="https://aancjr.github.io/Crystal-Collector/" target="_blank"
                     ><img
@@ -166,14 +152,14 @@
                       class="card-img-top"
                       alt="crystal-collector-screenshot"
                   /></a>
-                  <!-- <div class="card-body">
+                  <div class="card-body">
                     <p class="card-text">
                       Web-based game where the user has to guess the number the computer has randomly selected by
                       clicking the correct gem's to add up to the total number. Each new game loads a new random
                       computer guess (19-120) and each gem has a randomly selected value (1-12). If you add up the gem's
                       to reach the computer's guess, you win! If you go over, you lose!
                     </p>
-                  </div> -->
+                  </div>
                   <div class="card-bottom">
                     <p class="card-text my-b">
                       <a href="https://github.com/aancjr/Crystal-Collector" target="_blank">GitHub</a>
@@ -186,9 +172,11 @@
                   </div>
                 </div>
               </div>
+            </div>
 
-              <div class="col-4">
-                <div class="card bg-light">
+            <div class="carousel-item">
+              <div class="col-lg-8 mx-auto">
+                <div class="card bg-light p-0 m-1">
                   <h5 class="card-header">Canna-Keeper</h5>
                   <a href="https://rocky-meadow-38771.herokuapp.com/" target="_blank"
                     ><img
@@ -196,7 +184,7 @@
                       class="card-img-top"
                       alt="Liri-bot screenshot"
                   /></a>
-                  <!-- <div class="card-body">
+                  <div class="card-body">
                     <p class="card-text">
                       Canna-Keeper is the hobby cannabis grower's go to app for tracking and logging their personal
                       grows from seedling to harvest. Users are able to upload images, log daily events and information
@@ -206,7 +194,7 @@
                     <p class="card-text">
                       Demo Account(case sensitive): Username: demo123 | Password: demo123
                     </p>
-                  </div> -->
+                  </div>
                   <div class="card-bottom">
                     <p class="card-text my-b">
                       <a href="https://github.com/kylewhittemore/project-three" target="_blank">GitHub</a>
@@ -219,20 +207,22 @@
                   </div>
                 </div>
               </div>
+            </div>
 
-              <div class="col-4">
-                <div class="card bg-light">
+            <div class="carousel-item">
+              <div class="col-lg-8 mx-auto">
+                <div class="card bg-light p-0 m-1">
                   <h5 class="card-header">Bamazon!</h5>
                   <a href="https://github.com/aancjr/bamazon" target="_blank"
                     ><img src="./assets/images/Portfolio/bamazonCustomer.gif" class="card-img-top" alt="bamazon!"
                   /></a>
-                  <!-- <div class="card-body">
+                  <div class="card-body">
                     <p class="card-text">
                       An Amazon-like simulated storefront using the command line to interact with the customer or
                       manager. The user will choose their product and view the final price. The database will then
                       actively update the inventory.
                     </p>
-                  </div> -->
+                  </div>
                   <div class="card-bottom">
                     <p class="card-text my-b">
                       <a href="https://github.com/aancjr/bamazon" target="_blank">GitHub</a>
@@ -244,10 +234,12 @@
                 </div>
               </div>
             </div>
+
           </div>
         </div>
       </div>
     </section>
+
     <section class="resume" id="resumeRef">
       <div class="container text-center">
         <h1 class="resumeHeading">R E S U M E</h1>
@@ -521,15 +513,29 @@
                 id="linkedin-footer"
                 href="https://www.linkedin.com/in/andrew-anc-0911721a"
               >
-                <span class="fa fa-linkedin"></span>
+                <span class="fab fa-linkedin"></span>
               </a>
               <a class="btn btn-social-icon btn-github" id="github-footer" href="https://github.com/aancjr">
-                <span class="fa fa-github"></span>
+                <span class="fab fa-github"></span>
               </a>
             </div>
           </div>
         </div>
       </div>
     </footer>
+
+    <!-- JavaScript -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous"
+    ></script>
+    <script type="text/javascript" src="assets/javascript/logic.js"></script>
   </body>
 </html>

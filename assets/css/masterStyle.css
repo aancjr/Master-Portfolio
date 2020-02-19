@@ -6,14 +6,14 @@ body {
 }
 
 * {
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
 section {
-  padding: 100px 0;
+  padding: 75px 0;
 }
 
 /* ---------------------
@@ -75,7 +75,8 @@ header.fixed {
   transform: translate(0, -200px);
 }
 
-header.fixed nav a, header.fixed a {
+header.fixed nav a,
+header.fixed a {
   color: #333;
 }
 
@@ -109,7 +110,8 @@ header.in-view {
   position: absolute;
 }
 
-.hero-banner .text-wrap, .about {
+.hero-banner .text-wrap,
+.about {
   color: white;
   position: relative;
   z-index: 1;
@@ -141,8 +143,7 @@ ol.carousel-indicators li {
   background-color: black;
 }
 
-ol.carousel-indicators a.carousel-control-prev span.sr-only, ol.carousel-indicators a.carousel-control-next span.sr-only {
-  background-color: black;
+.fa.fa-long-arrow-alt-right, .fa.fa-long-arrow-alt-left {
   color: black;
 }
 
@@ -202,7 +203,7 @@ ol.carousel-indicators a.carousel-control-prev span.sr-only, ol.carousel-indicat
   }
 
   p {
-    font-size: .6rem;
+    font-size: 0.6rem;
   }
 
   .portfolioHeading {
@@ -222,7 +223,7 @@ ol.carousel-indicators a.carousel-control-prev span.sr-only, ol.carousel-indicat
 
 @media only screen and (min-width: 601px) and (max-width: 992px) {
   #aboutMeNavBar {
-    background: rgba(10, 27, 49, 0.973)
+    background: rgba(10, 27, 49, 0.973);
   }
 
   .badges {
