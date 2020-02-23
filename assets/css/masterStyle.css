@@ -147,6 +147,10 @@ ol.carousel-indicators li {
   color: black;
 }
 
+.bamazonGif, img.canna-keeperGif {
+  max-height: 560.31px;
+}
+
 .card-text {
   font-size: 12px;
 }
