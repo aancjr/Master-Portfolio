@@ -129,7 +129,7 @@ header.in-view {
   text-align: center;
   line-height: 2;
   background: #f1f1f1;
-  padding-bottom: 150px;
+  padding-bottom: 125px;
 }
 
 .portfolioHeading {
@@ -137,15 +137,23 @@ header.in-view {
 }
 
 ol.carousel-indicators {
-  bottom: -50px;
+  bottom: -60px;
 }
 
 ol.carousel-indicators li {
   background-color: black;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
 }
 
 .fa.fa-long-arrow-alt-right, .fa.fa-long-arrow-alt-left {
   color: black;
+}
+
+.carousel-inner {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  text-align: center;
 }
 
 .bamazonGif, img.canna-keeperGif {
@@ -165,11 +173,11 @@ ol.carousel-indicators li {
 --------------------- */
 
 .resumeHeading {
-  margin-top: -50px;
+  margin-bottom: 10px;
 }
 
 .resumeLink {
-  margin-bottom: 5px;
+  margin-bottom: 25px;
 }
 
 /* ---------------------
@@ -177,8 +185,7 @@ ol.carousel-indicators li {
 --------------------- */
 
 .badges {
-  margin-bottom: -100px;
-  max-width: 3rem;
+  max-width: 2.75rem;
 }
 
 /* ---------------------
@@ -189,7 +196,6 @@ ol.carousel-indicators li {
   border-color: rgb(134, 134, 134);
   border-top-style: solid;
   border-width: 3px;
-  margin-top: 15px;
   background-color: rgba(10, 27, 49, 0.973);
 }
 
